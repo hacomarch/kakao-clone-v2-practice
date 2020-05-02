@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--아이콘을 쓰려면 써줘야 함.-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>More | Kakao-Clone-Coding</title>
+</head>
+
+<body>
+    <!--상태바 status bar-->
+    <div class="status-bar">
+        <!--상태바 시간-->
+        <div class="status-bar__column"> 
+            <span class="status-bar__clock">13:53</span>
+        </div>
+        <!--상태바 아이콘-->
+        <div class="status-bar__column">
+            <i class="far fa-clock"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery">33%</span>
+            <i class="fas fa-battery-quarter"></i>
+        </div>
+    </div>
+    <!--header-->
+    <header class="header">
+        <div class="header__header-column">
+            <h1 class="header__title">More</h1>
+        </div>
+        <div class="header__header-column">
+            <span class="header__icon">
+                <i class="fas fa-search"></i>
+            </span>
+            <span class="header__icon">
+                <i class="fas fa-qrcode"></i>            
+            </span>
+            <span class="header__icon">
+                <a href="set.html">
+                    <i class="fas fa-cog"></i>
+                </a>
+            </span>
+        </div>
+    </header>
+    <!--main-->
+    <main class="more">
+        <header class="more__header">
+            <div class="friends__friend friend friend--lg">
+                <div class="friend__column">
+                    <img src="images/haeun_profil.PNG" class="g-profil friend__profil">
+                    <div class="friend__content">
+                        <span class="friend__name">Yun Haeun</span>
+                        <span class="friend__email">haco_march@naver.com</span>
+                    </div>
+                </div>
+                <div class="friend__column">
+                    <i class="far fa-sticky-note fa-2x"></i>
+                </div>
+            </div>
+
+            <ul class="more__btn-list">
+                <li class="more__btn">
+                    <span class="more-btn__icon">
+                        <i class="far fa-smile-beam fa-2x"></i>
+                    </span>
+                    <span class="more-btn__title">
+                        Emoticons
+                    </span>
+                </li>
+                <li class="more__btn">
+                    <span class="more-btn__icon">
+                        <i class="fas fa-brush fa-2x"></i>
+                    </span>
+                    <span class="more-btn__title">
+                        Thems
+                    </span>
+                </li>
+                <li class="more__btn">
+                    <span class="more-btn__icon">
+                        <i class="fab fa-kickstarter-k fa-2x"></i>
+                    </span>
+                    <span class="more-btn__title">
+                        Account
+                    </span>
+                </li>
+            </ul>
+        </header>
+
+        <section class="more__sug">
+            <h5 class="more__title">Suggestions</h5>
+            <ul class="more__sug-list">
+                <li class="more__sug sug">
+                    <span class="sug__icon">
+                        <i class="fas fa-quote-right fa-2x"></i>
+                    </span>
+                    <span class="sug__title">
+                        Kakao Story
+                    </span>
+                </li>
+                <li class="more__sug sug">
+                    <span class="sug__icon">
+                        <i class="fas fa-paw fa-2x"></i>
+                    </span>
+                    <span class="sug__title">
+                        Kakao Friends
+                    </span>
+                </li>
+                <li class="more__sug sug">
+                    <span class="sug__icon">
+                        <i class="fas fa-gamepad fa-2x"></i>
+                    </span>
+                    <span class="sug__title">
+                        Friends Gem
+                    </span>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <nav class="nav">
+        <ul class="nav__list">
+            <!--li.nav__list-item*4>a.nav__list-link : li안에 링크(a)를 만드는 것, a가 li안에 있다는 것-->
+            <li class="nav__list-item">
+                <a href="friend.html" class="nav__list-link">
+                    <i class="far fa-user"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="chatlist.html" class="nav__list-link">
+                    <i class="far fa-comment"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="find.html" class="nav__list-link">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="more.html" class="nav__list-link">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--아이콘을 쓰려면 써줘야 함.-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>Friends-List | Kakao-Clone-Coding</title>
+</head>
+
+<body>
+    <!--상태바 status bar-->
+    <div class="status-bar">
+        <!--상태바 시간-->
+        <div class="status-bar__column"> 
+            <span class="status-bar__clock">13:53</span>
+        </div>
+        <!--상태바 아이콘-->
+        <div class="status-bar__column">
+            <i class="far fa-clock"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery">33%</span>
+            <i class="fas fa-battery-quarter"></i>
+        </div>
+    </div>
+    <!--header-->
+    <header class="header">
+        <div class="header__header-column">
+            <h1 class="header__title">Friends List</h1>
+        </div>
+        <div class="header__header-column">
+            <span class="header__icon">
+                <i class="fas fa-user-plus"></i>
+            </span>
+        </div>
+    </header>
+    <!--main-->
+    <main class="friends">
+        <header class="friend__header">
+            <div class="friends__friend friend friend--lg">
+                <div class="friend__column">
+                    <img src="images/haeun_profil.PNG" class="g-profil friend__profil">
+                    <div class="friend__content">
+                        <span class="friend__name">Yun Haeun</span>
+                        <span class="friend__status">bamtori</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--friends birth-->
+        <div class="friends__birth">
+            <h5 class="friends__title">Birthday Friends</h5>
+            <div class="friends__friend friend">
+                <div class="friend__column">
+                    <img src="images/birthday.PNG" class="g-profil friend__profil">
+                    <div class="friend__content">
+                        <span class="friend__name">Check your friend's Birthday</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--friends list-->
+        <ul class="friends__list">
+            <h5 class="friends__title">Favorits</h5>
+
+            <li class="friends__friend friend friend--lg">
+                <div class="friend__column">
+                    <img src="images/sungtae_profil.jpg" class="g-profil friend__profil">
+                    <div class="friend__content">
+                        <span class="friend__name">Sung Tae</span>
+                        <span class="friend__status">1.4!!, 2021,3,17</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="friends__friend friend friend">
+                <div class="friend__column">
+                    <img src="images/mama_profil.png" class="g-profil friend__profil">
+                    <div class="friend__content">
+                        <span class="friend__name">MaMA</span>
+                        <span class="friend__status">blablablabla</span>
+                    </div>
+                </div>
+                <div class="friend__column">
+                    <div class="friend__now-listening">
+                        <span>BTS-Spring Day</span>
+                    </div>
+                    <i class="fas fa-play"></i>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <!--li.nav__list-item*4>a.nav__list-link : li안에 링크(a)를 만드는 것, a가 li안에 있다는 것-->
+            <li class="nav__list-item">
+                <a href="friend.html" class="nav__list-link">
+                    <i class="fas fa-user"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="chatlist.html" class="nav__list-link">
+                    <i class="far fa-comment"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="find.html" class="nav__list-link">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="more.html" class="nav__list-link">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

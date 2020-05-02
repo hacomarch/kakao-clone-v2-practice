@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--아이콘을 쓰려면 써줘야 함.-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>Chattings | Kakao-Clone-Coding</title>
+</head>
+
+<body>
+    <!--상태바 status bar-->
+    <div class="status-bar">
+        <!--상태바 시간-->
+        <div class="status-bar__column"> 
+            <span class="status-bar__clock">13:53</span>
+        </div>
+        <!--상태바 아이콘-->
+        <div class="status-bar__column">
+            <i class="far fa-clock"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery">33%</span>
+            <i class="fas fa-battery-quarter"></i>
+        </div>
+    </div>
+    <!--header-->
+    <header class="header">
+        <div class="header__header-column">
+            <a href="chatlist.html" class="header__back-btn">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h3 class="header__title">Sung Tae</h3>
+        </div>
+        <div class="header__header-column">
+            <span class="header__icon">
+                <i class="fas fa-search"></i>
+            </span>
+            <span class="header__icon">
+                <i class="fas fa-bars"></i>
+            </span>
+        </div>
+    </header>
+    <!--main-->
+    <main class="chatting">
+        <ul class="chatting__msg">
+            <span class="chatting__timestmap">Sunday, May 2, 2020</span>
+            <li class="incoming-msg msg">
+                <img src="images/sungtae_profil.jpg" class="g-profil message__profil"/>
+                <div class="msg__content">
+                    <span class="msg__author">Sung Tae</span>
+                    <div class="msg__bub">I Love You!!!!!!!</div>
+                </div>
+                <span class="timestamp">PM 9:19</span>
+            </li>
+
+            <li class="incoming-msg msg">
+                <span class="chatting__timestamp">PM 9:19</span>
+                <div class="msg__content">
+                    <div class="msg__bub">I Love You TOO!!!!!!!</div>
+                </div>
+            </li>
+
+            <li class="incoming-msg msg">
+                <img src="images/sungtae_profil.jpg" class="g-profil message__profil"/>
+                <div class="msg__content">
+                    <span class="msg__author">Sung Tae</span>
+                    <div class="msg__bub">I Miss You!!!!!!!</div>
+                </div>
+                <span class="timestamp">PM 9:20</span>
+            </li>
+        </ul>
+    </main>
+    <!---->
+    <div class="chatting__write">
+        <div class="chatting__write-column">
+            <span class="chatting__write-icon">
+                <i class="far fa-plus-square"></i>
+            </span>
+        </div>
+        <div class="chatting__write-column">
+            <input type="text" placeholder="Send Message" class="chatting__write-input">
+        </div>
+        <div class="chatting__write-column">
+            <span class="chatting__write-icon">
+                <i class="far fa-smile-beam"></i>
+            </span>
+            <span class="chat__write-icon">
+                <i class="fas fa-microphone"></i>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
